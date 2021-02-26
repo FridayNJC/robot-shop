@@ -1,8 +1,7 @@
 version: '3'
 services:
   load:
-    image: ${REPO}/rs-load:${TAG}
-    build:
+    image: robotshop/rs-load:latest
       context: load-gen
     environment:
       HOST: http://web:8080
