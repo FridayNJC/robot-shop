@@ -11,7 +11,7 @@ pipeline{
         sh 'docker build -t nileshchudasama/cart:v1 ./cart'
         sh 'docker push nileshchudasama/cart:v1'
         sh 'docker rmi -f $(docker images -a -q)'
-        sh 'docker build -t nileshchudasama/catelouge:v1 ./catelouge'
+        sh 'docker build -t nileshchudasama/catelouge:v1 ./catalouge'
         sh 'docker push nileshchudasama/catelouge:v1'
         sh 'docker rmi -f $(docker images -a -q)'
         sh 'docker build -t nileshchudasama/dispatch:v1 ./dispatch'
