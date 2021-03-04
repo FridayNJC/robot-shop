@@ -1,7 +1,7 @@
 pipeline{
   agent any
   stages{
-    stage('Cloaning our git'  {
+    stage('Cloaning our git'){
       steps {
           git 'https://github.com/FridayNJC/robot-shop.git/'
       }
